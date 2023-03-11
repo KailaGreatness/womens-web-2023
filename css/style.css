@@ -1,0 +1,148 @@
+body {
+    font-family: "Manrope", sans-serif;
+    background-image: url("../images/feminist-background.jpg");
+    background-color: #fe94db;
+    margin: 20px;
+}
+
+
+nav {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+nav ul li{
+
+    display: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: #fe94db;
+    font-size: 18px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: #83008f;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Define the animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply the animation to the h1 element */
+h1 {
+  animation: fadeInOut 6s ease-in-out infinite;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    text-align: left;
+    padding: 12px;
+}
+
+p {
+    font-size: 16px;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    margin: 0px auto;
+    display: block;
+    padding: 10px;
+}
+
+li{
+    font-size: 24px;
+}
+
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: inline-grid;
+    margin-top: 20px;
+    width: 90%;
+    row-gap: 40px;
+    border-radius: 25px;
+    column-gap: 50px;
+    margin: 0 5vw;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: solid px black;
+    border-radius: 40px;
+    background-color: #f5bcec;
+    padding: 10px;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    display: block;
+    margin: auto;
+    width: 95%;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 9px 0 16px  #e4bdff;
+
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+   box-shadow: -9px 0 16px #e4bdff;
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: 9px 0 16px  #e4bdff, -9px 0 16px #e4bdff;
+}
+    
+
+p + p {
+     /* Set indentation */
+    text-indent: 20px;
+}
+  
+p{
+     /* Set margin */
+     margin: 10px;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    margin: 0px 0px 20px 40px;
+    line-height: 1;
+}

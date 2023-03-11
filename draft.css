@@ -1,0 +1,23 @@
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #333;
+  }
+
+  /* Define the animation */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Apply the animation to the h1 element */
+  h1 {
+    animation: fadeInOut 2s ease-in-out infinite;
+  }
